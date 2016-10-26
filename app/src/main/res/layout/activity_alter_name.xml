@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/set_title"
+        android:layout_width="match_parent"
+        android:background="@color/theme_color"
+        android:layout_height="@dimen/title_height">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改昵称"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="哈哈哈"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:background="@drawable/rect_circle_red_shape"
+        android:gravity="center"
+        android:id="@+id/next_txt"
+        android:textSize="@dimen/content_text_size"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/margin_20dp"
+        android:padding="@dimen/margin_15dp"
+        />
+
+</LinearLayout>

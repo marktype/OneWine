@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wine.onewine">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".basepage.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".basepage.BaseActivity" />
+        <activity android:name=".busness.BusnessActivity" />
+        <activity android:name=".homepage.GoodsDetialActivity" />
+        <activity android:name=".classify.ClassifyActivity" />
+        <activity android:name=".personal.LoginActivity" />
+        <activity android:name=".personal.RegisterActivity" />
+        <activity android:name=".personal.SetPasswordActivity" />
+        <activity android:name=".personal.ForgetPasswordActivity" />
+        <activity android:name=".personal.SettingActivity" />
+        <activity android:name=".personal.MyInfoActivity" />
+        <activity android:name=".personal.AlterNameActivity" />
+        <activity android:name=".personal.AlterPasswordActivity" />
+        <activity android:name=".personal.AddressListActivity" />
+        <activity android:name=".personal.AllOrderActivity"></activity>
+    </application>
+
+</manifest>

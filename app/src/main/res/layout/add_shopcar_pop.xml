@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/snow_write_color"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pop_title"
+        android:layout_width="match_parent"
+        android:background="@color/theme_color"
+        android:layout_height="@dimen/title_height">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择规格"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/goods_info_relat"
+        android:layout_below="@+id/pop_title"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_width="@dimen/margin_100dp"
+        android:layout_height="@dimen/margin_100dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名字"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/goods_name_car"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/car_image"/>
+
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/car_image"
+            android:layout_below="@+id/goods_name_car"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:text="￥211"/>
+    </RelativeLayout>
+    <!--数量选择器-->
+    <RelativeLayout
+        android:id="@+id/number_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_info_relat"
+        android:padding="@dimen/margin_10dp"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/num_desc_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@mipmap/jianshao"
+                />
+
+            <TextView
+                android:id="@+id/num_textview"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/num_add_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@mipmap/zengjia"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_alignParentBottom="true"
+       android:background="@android:color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:text="提交申请"
+           android:background="@drawable/rect_circle_red_shape"
+           android:textColor="@android:color/white"
+           android:layout_marginLeft="@dimen/margin_20dp"
+           android:layout_marginRight="@dimen/margin_20dp"
+           android:layout_marginTop="@dimen/margin_5dp"
+           android:layout_marginBottom="@dimen/margin_5dp"
+           android:padding="@dimen/margin_10dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+</RelativeLayout>

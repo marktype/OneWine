@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_margin="@dimen/margin_10dp"
+        android:id="@+id/addre_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addr_phone"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/addre_name"
+        android:text="465456456454"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="默认"-->
+        <!--android:layout_marginTop="@dimen/margin_10dp"-->
+        <!--android:paddingLeft="@dimen/margin_8dp"-->
+        <!--android:paddingRight="@dimen/margin_8dp"-->
+        <!--android:layout_toRightOf="@+id/addr_phone"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="@dimen/content_min_text_size"-->
+        <!--android:id="@+id/is_defult"-->
+        <!--android:background="@drawable/rect_circle_red_min_shape"/>-->
+    <ImageView
+        android:id="@+id/edit_img"
+        android:src="@mipmap/addr_edit"
+        android:padding="@dimen/margin_10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="省市区"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_below="@+id/addre_name"
+        android:id="@+id/pro_city_area_txt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地址详细"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_below="@+id/pro_city_area_txt"
+        android:id="@+id/addr_detial"/>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="@dimen/margin_80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名字"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/goods_name_car"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/car_image"/>
+
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/car_image"
+            android:layout_below="@+id/goods_name_car"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:text="￥211"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x1"
+            android:id="@+id/num_textview"
+            android:textColor="@color/theme_color"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/car_price"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥99"
+            android:textColor="@color/theme_color"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/order_price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价："
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toLeftOf="@+id/order_price"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

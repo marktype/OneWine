@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/margin_10dp"
+        android:id="@+id/goods_detial_name"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:id="@+id/line_content"
+        android:layout_marginLeft="@dimen/margin_100dp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_10dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/goods_detial_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/line_content"
+        android:padding="@dimen/margin_10dp"
+        android:text="详细介绍"/>
+</RelativeLayout>

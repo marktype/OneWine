@@ -1,0 +1,84 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wine.onewine.homepage.HomeFragment">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+   <include layout="@layout/home_head"></include>
+    <include layout="@layout/imageslider_layout"></include>
+    <!--<com.wine.onewine.customview.MyGridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:listSelector="#00000000"-->
+        <!--android:numColumns="4"-->
+        <!--android:horizontalSpacing="5dp"-->
+        <!--android:padding="5dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:scrollbars="none"-->
+        <!--android:verticalSpacing="5dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/toutiao"/>
+        <com.wine.onewine.customview.ScrollTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_min_text_size"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="掌上秒拍"/>
+        <TextView
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/content_min_text_size"
+            android:layout_height="wrap_content"
+            android:text="距结束10:20:30"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:drawableRight="@mipmap/gengduo"/>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/scollview_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:src="@mipmap/content_image"
+        android:id="@+id/content_image"/>
+    <include layout="@layout/home_image_four_layout"></include>
+    <include layout="@layout/home_baokuan_content_layout"></include>
+</LinearLayout>
+</ScrollView>

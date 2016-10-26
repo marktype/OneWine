@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--自定义颜色-->
+    <color name="theme_color">#B00000</color>
+    <color name="add_car_color">#F9B64C</color>
+    <color name="snow_write_color">#FFFAFA</color>
+</resources>

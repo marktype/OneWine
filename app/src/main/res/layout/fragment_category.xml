@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/car_title"
+        android:layout_width="match_parent"
+        android:background="@color/theme_color"
+        android:layout_height="@dimen/title_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classify_txt"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/content_text_size"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/classify_gridview"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:layout_height="wrap_content"></GridView>
+
+</LinearLayout>

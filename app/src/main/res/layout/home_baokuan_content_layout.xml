@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@drawable/home_tuijian_selector"
+            android:gravity="center"
+            android:text="爆款推荐"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@drawable/home_tuijian_selector"
+            android:gravity="center"
+            android:text="猜你喜欢"/>
+    </RadioGroup>
+    <com.wine.onewine.customview.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_content_gridview"
+        android:numColumns="2"></com.wine.onewine.customview.MyGridView>
+</LinearLayout>

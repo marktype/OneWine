@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/theme_color">
+
+    <LinearLayout
+        android:id="@+id/suyuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:src="@mipmap/saomiao" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:src="@mipmap/news"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/home_message"
+        android:layout_toRightOf="@id/suyuan"
+        android:background="@drawable/rect_write_shape"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_6dp"
+        android:textSize="@dimen/content_text_size"
+        android:hint="搜索"
+        android:singleLine="true"
+        android:textColor="#666666" />
+</RelativeLayout>

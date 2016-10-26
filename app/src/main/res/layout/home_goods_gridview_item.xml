@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/goujiu_image"/>
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美酒"
+        android:layout_below="@+id/goods_image"
+        android:layout_margin="@dimen/margin_10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goods_price"
+        android:text="￥112"
+        android:textColor="@color/theme_color"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_below="@id/goods_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goods_discunt"
+        android:text="￥123"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:layout_below="@+id/goods_name"
+        android:layout_toRightOf="@+id/goods_price"/>
+</RelativeLayout>
